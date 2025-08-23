@@ -28,8 +28,7 @@ export default function Tokens() {
                 <li>→ COMMUNITY</li>
               </ul>
               <p className="pt-4">REVENUE SHARE: 25% OF ALL AGENT REVENUE</p>
-              <p>TWAB: 30-DAY TIME-WEIGHTED AVERAGE</p>
-              <p>CAP: 2% PER WALLET MAX</p>
+              <p>HOLDERS RECEIVE PRO-RATA DISTRIBUTION</p>
             </div>
           </div>
           
