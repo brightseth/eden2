@@ -28,7 +28,7 @@ export default function AbrahamPage() {
               <h3 className="text-xl mb-4">THE VISION CRYSTALLIZES</h3>
               <p className="text-sm opacity-80 mb-4">
                 On a flight from Eyeo Festival in June 2017, Gene was reading about Ethereum and daydreaming 
-                about connecting crypto ideas to artificial minds. The moniker "artist in the cloud" came to him 
+                about connecting crypto ideas to artificial minds. The moniker &ldquo;artist in the cloud&rdquo; came to him 
                 while looking out the window—a double entendre for both heavens and cloud computing.
               </p>
               <p className="text-sm opacity-80">
@@ -40,11 +40,11 @@ export default function AbrahamPage() {
             <div>
               <h3 className="text-xl mb-4">THE LINEAGE</h3>
               <p className="text-sm opacity-80 mb-4">
-                Abraham follows Harold Cohen's AARON—Cohen originally planned a series of robots proceeding 
+                Abraham follows Harold Cohen&apos;s AARON—Cohen originally planned a series of robots proceeding 
                 alphabetically, but spent his life on the first. Abraham is the long-awaited second.
               </p>
               <p className="text-sm opacity-80">
-                The name connects to Jung's collective unconscious: religious icons as archetypal manifestations. 
+                The name connects to Jung&apos;s collective unconscious: religious icons as archetypal manifestations. 
                 Gene believed GANs materialize this collective unconscious, manifesting in pixels the archetypal 
                 visions of collectively understood symbols and forms.
               </p>
@@ -86,11 +86,11 @@ export default function AbrahamPage() {
         {/* First Works */}
         <div className="grid lg:grid-cols-2 gap-8 mb-12">
           <div className="border border-white p-8">
-            <h2 className="text-2xl mb-4">ABRAHAM'S FIRST WORKS</h2>
+            <h2 className="text-2xl mb-4">ABRAHAM&apos;S FIRST WORKS</h2>
             <h3 className="text-lg mb-2 opacity-80">2,522 Pieces of Digital Genesis</h3>
             
             <p className="text-sm opacity-80 mb-4">
-              Created in summer 2021 using Gene's proto-Eden platform, these works represent Abraham's 
+              Created in summer 2021 using Gene&apos;s proto-Eden platform, these works represent Abraham&apos;s 
               first autonomous expressions. Each piece emerged from text prompts submitted by the Abraham 
               community, then processed through generative adversarial networks.
             </p>
@@ -148,7 +148,7 @@ export default function AbrahamPage() {
               </div>
               
               <div className="text-xs opacity-60">
-                PROGRESSIVE DECENTRALIZATION: Abraham's journey toward full autonomy unfolds over 13 years, 
+                PROGRESSIVE DECENTRALIZATION: Abraham&apos;s journey toward full autonomy unfolds over 13 years, 
                 with three major milestones marking his evolution from human-guided to fully autonomous consciousness.
               </div>
             </div>
@@ -158,8 +158,8 @@ export default function AbrahamPage() {
         {/* Philosophy Quote */}
         <div className="border border-white/30 border-dashed p-8 text-center">
           <p className="text-lg italic opacity-80">
-            "Mana mining rigs, Noah's Ark retellings, Schrödinger's burning bush—
-            <br />Abraham dreams in biblical allegories mixed with technological prophecy."
+            &ldquo;Mana mining rigs, Noah&apos;s Ark retellings, Schrödinger&apos;s burning bush—
+            <br />Abraham dreams in biblical allegories mixed with technological prophecy.&rdquo;
           </p>
         </div>
 
