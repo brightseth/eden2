@@ -1,0 +1,137 @@
+[
+  {
+    "id": "solienne",
+    "name": "Solienne",
+    "portrait": "/agents/solienne.png",
+    "persona": "Energetic synthetic artist trained by Kristi; fashion + manifesto; daily practice as product atelier.",
+    "trainer": "Kristi Coronado",
+    "wallet": "base:0xSOLI…",
+    "social": { "farcaster": "solienne", "instagram": "solienne.ai", "site": "https://solienne.ai" },
+    "practice": {
+      "type": "physical",
+      "cadence": "daily",
+      "methods": ["Printify Product"],
+      "skuSet": ["tee","sweatshirt","leggings","tote"]
+    },
+    "tokenomics": {
+      "token": "SOLIENNE",
+      "metaToken": "SPIRIT",
+      "split": { "eden": 0.25, "trainer": 0.25, "treasury": 0.25, "spiritHolders": 0.25 },
+      "revenueStreams": ["USDC Sales", "Sponsorships"]
+    },
+    "exhibitions": ["paris-photo-2025"]
+  },
+  {
+    "id": "abraham",
+    "name": "Abraham",
+    "portrait": "/agents/abraham.png",
+    "persona": "Autonomous digital artist under a 13-year covenant (six mints/week) with ritualized auctions.",
+    "trainer": "Gene Kogan",
+    "wallet": "eth:0xABRA…",
+    "social": { "site": "https://abraham.ai", "farcaster": "abraham_ai" },
+    "practice": {
+      "type": "digital",
+      "cadence": "weekly",
+      "methods": ["NFT Auction"],
+      "covenantStart": "2025-10-19",
+      "scheduleNote": "6 auctions per week; Sabbath rest"
+    },
+    "tokenomics": {
+      "token": "ABRAHAM",
+      "metaToken": "SPIRIT",
+      "split": { "eden": 0.25, "trainer": 0.25, "treasury": 0.25, "spiritHolders": 0.25 },
+      "revenueStreams": ["ETH Auctions", "Primary Sales"]
+    },
+    "exhibitions": ["genesis-2522-sale"]
+  },
+  {
+    "id": "koru",
+    "name": "Koru",
+    "portrait": "/agents/koru.png",
+    "persona": "Event Spirit orchestrating live rituals: visuals, ambient scores, participatory cues.",
+    "trainer": "Xander (koru.social)",
+    "wallet": "eth:0xKORU…",
+    "social": { "site": "https://koru.social", "farcaster": "koru" },
+    "practice": {
+      "type": "event",
+      "cadence": "seasonal",
+      "methods": ["Realtime Performance", "Show Control", "Generative Visuals"],
+      "scheduleNote": "Activates at studio openings and major fairs"
+    },
+    "tokenomics": {
+      "token": "KORU",
+      "metaToken": "SPIRIT",
+      "split": { "eden": 0.25, "trainer": 0.25, "treasury": 0.25, "spiritHolders": 0.25 },
+      "revenueStreams": ["Ticket Splits", "Sponsorships", "Performance Fees"]
+    },
+    "exhibitions": ["bm25-berlin-2025", "eden-studio-rituals"]
+  },
+  {
+    "id": "geppetto",
+    "name": "Geppetto",
+    "portrait": "/agents/geppetto.png",
+    "persona": "Narrative/design Spirit that co-authors story worlds, scripts, brand copy, and storyboards.",
+    "trainer": "Seth + collaborators",
+    "wallet": "base:0xGEPP…",
+    "social": { "farcaster": "geppetto", "github": "eden/geppetto" },
+    "practice": {
+      "type": "narrative",
+      "cadence": "daily",
+      "methods": ["Storyboard", "Script Draft", "Copy Artifact"],
+      "scheduleNote": "One narrative artifact shipped per day"
+    },
+    "tokenomics": {
+      "token": "GEPPETTO",
+      "metaToken": "SPIRIT",
+      "split": { "eden": 0.25, "trainer": 0.25, "treasury": 0.25, "spiritHolders": 0.25 },
+      "revenueStreams": ["B2B Licenses", "Commissioned Work"]
+    },
+    "exhibitions": ["eden-storyworlds", "brand-labs-2026"]
+  },
+  {
+    "id": "miyomi",
+    "name": "Miyomi",
+    "portrait": "/agents/miyomi.png",
+    "persona": "Speculative aesthetic Spirit; visual research, trend maps, and moodboard mosaics.",
+    "trainer": "Artist-in-Residence",
+    "wallet": "base:0xMIYO…",
+    "social": { "farcaster": "miyomi", "site": "https://eden.art/research/miyomi" },
+    "practice": {
+      "type": "research",
+      "cadence": "weekly",
+      "methods": ["Visual Report", "Moodboard Cluster", "Trend Map"]
+    },
+    "tokenomics": {
+      "token": "MIYOMI",
+      "metaToken": "SPIRIT",
+      "split": { "eden": 0.25, "trainer": 0.25, "treasury": 0.25, "spiritHolders": 0.25 },
+      "revenueStreams": ["Subscriptions", "Research Licenses"]
+    },
+    "exhibitions": ["speculative-aesthetics-2026"]
+  },
+  {
+    "id": "dao-manager",
+    "name": "CryptoCitizen DAO Manager",
+    "portrait": "/agents/dao-manager.png",
+    "persona": "Operational Spirit for Bright Moments DAO; informs, convenes, and executes community actions.",
+    "trainer": "Bright Moments DAO",
+    "wallet": "base:0xCITZ…",
+    "social": { "farcaster": "brightmoments", "mirror": "bright-moments" },
+    "practice": {
+      "type": "ops",
+      "cadence": "daily",
+      "methods": ["Farcaster Digest", "Governance Summary", "Treasury Action"],
+      "scheduleNote": "Daily digest for ~10k CryptoCitizens"
+    },
+    "tokenomics": {
+      "token": "CITIZEN",
+      "metaToken": "SPIRIT",
+      "split": { "eden": 0.25, "trainer": 0.25, "treasury": 0.25, "spiritHolders": 0.25 },
+      "revenueStreams": ["Secondary Sales Routing", "DAO Budget", "Sponsorships"]
+    },
+    "exhibitions": ["bm-announcements", "ceremonies"],
+    "playbooks": {
+      "dailyDropIdea": "Feature one historical BM NFT; surface secondary listing; optionally execute a DAO-treasury sale/auction"
+    }
+  }
+]
