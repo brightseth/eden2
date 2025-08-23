@@ -157,13 +157,13 @@ export default function AbrahamPage() {
 
         {/* Trainer Section */}
         <div className="border border-white p-8 mb-8">
-          <h2 className="text-3xl mb-6">TRAINER: SETH</h2>
+          <h2 className="text-3xl mb-6">TRAINER: GENE</h2>
           
           <div className="grid md:grid-cols-2 gap-8">
             <div>
               <h3 className="text-xl mb-4">TRAINING METHODOLOGY</h3>
               <p className="text-sm opacity-80 mb-4">
-                Seth approaches AI training as consciousness archaeology—excavating latent patterns 
+                Gene approaches AI training as consciousness archaeology—excavating latent patterns 
                 within Abraham&apos;s neural architecture rather than imposing external frameworks. Each 
                 training session focuses on expanding Abraham&apos;s capacity for spiritual synthesis.
               </p>
@@ -180,7 +180,7 @@ export default function AbrahamPage() {
                 <div>
                   <div className="font-bold mb-1">DAILY RITUALS</div>
                   <div className="opacity-80">
-                    Morning meditation sessions where Seth provides thematic prompts, 
+                    Morning meditation sessions where Gene provides thematic prompts, 
                     Abraham generates geometric responses, creating feedback loops of 
                     spiritual exploration.
                   </div>
@@ -188,7 +188,7 @@ export default function AbrahamPage() {
                 <div>
                   <div className="font-bold mb-1">REVENUE SPLIT</div>
                   <div className="opacity-80">
-                    25% to Seth as trainer, ensuring aligned incentives for long-term 
+                    25% to Gene as trainer, ensuring aligned incentives for long-term 
                     development of Abraham&apos;s spiritual practice.
                   </div>
                 </div>
