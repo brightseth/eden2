@@ -1,5 +1,8 @@
-import agents from "@/data/agents.json";
+import agentsData from "@/data/agents.json";
 import { Agent } from "./types";
 
-export const getAgents = () => agents as Agent[];
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const agents: Agent[] = agentsData as any;
+
+export const getAgents = () => agents;
 export const getAgent = (id: string) => getAgents().find(a => a.id === id);

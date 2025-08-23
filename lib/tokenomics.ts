@@ -76,7 +76,7 @@ export function distributeWithCap(
   }
 
   const perAddress = new Map<string, number>();
-  work.forEach((w, i) => {
+  work.forEach((w) => {
     const e = candidates[w.idx];
     perAddress.set(e.address, (perAddress.get(e.address) ?? 0) + w.share);
   });

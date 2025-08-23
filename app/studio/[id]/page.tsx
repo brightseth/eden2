@@ -48,6 +48,7 @@ export default function Studio({ params }: { params: { id: string }}) {
         <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-6">
           {items.map((item, i) => (
             <div key={i} className="border border-white p-4">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src={item.url} alt="" className="w-full mb-4 bg-white/10"/>
               <input 
                 className="w-full bg-transparent border-b border-white/30 pb-1 mb-3 text-sm placeholder-white/40"

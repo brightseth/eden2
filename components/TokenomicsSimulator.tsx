@@ -17,9 +17,9 @@ const DEFAULT_HOLDERS: TwabEntry[] = [
   { address: "bridge_cex_1", label: "CEX/BRIDGE", twab: 30_000_000, eligible: true, flagged: true },
 ];
 
-export default function TokenomicsSimulator({ split, agentName, defaultAmount = 1000 }: Props) {
+export default function TokenomicsSimulator({ split, defaultAmount = 1000 }: Props) {
   const [amount, setAmount] = useState<number>(defaultAmount);
-  const [holders, setHolders] = useState<TwabEntry[]>(DEFAULT_HOLDERS);
+  const [holders] = useState<TwabEntry[]>(DEFAULT_HOLDERS);
   const [excludeFlagged, setExcludeFlagged] = useState(true);
   const [capPct, setCapPct] = useState(0.02);
 
