@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { getAgents } from "@/lib/db";
 import CreationShowcase from "@/components/CreationShowcase";
+import AgentInteractions from "@/components/AgentInteractions";
 
 export default function Academy() {
   const agents = getAgents();
@@ -18,6 +19,11 @@ export default function Academy() {
         {/* Creation Showcase */}
         <div className="mb-12">
           <CreationShowcase />
+        </div>
+        
+        {/* Agent Interactions */}
+        <div className="mb-12">
+          <AgentInteractions />
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">

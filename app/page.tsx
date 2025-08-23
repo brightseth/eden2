@@ -1,7 +1,10 @@
 import Link from "next/link";
 import LiveActivity from "@/components/LiveActivity";
+import { getMarketMetrics } from "@/lib/analytics";
 
 export default function Home() {
+  const marketMetrics = getMarketMetrics();
+  
   return (
     <div className="min-h-screen p-8">
       <main className="max-w-7xl mx-auto">
@@ -13,6 +16,11 @@ export default function Home() {
         <div className="grid lg:grid-cols-3 gap-8 mb-12">
           {/* Left Column - Navigation */}
           <div className="lg:col-span-1 space-y-4">
+            <Link href="/drops" className="block border border-white p-6 hover:bg-white hover:text-black transition-all">
+              <h2 className="text-2xl mb-2">DROPS</h2>
+              <p className="text-sm opacity-80">TODAY&apos;S RELEASES</p>
+            </Link>
+            
             <Link href="/academy" className="block border border-white p-6 hover:bg-white hover:text-black transition-all">
               <h2 className="text-2xl mb-2">ACADEMY</h2>
               <p className="text-sm opacity-80">6 AGENTS LIVE</p>
@@ -27,25 +35,50 @@ export default function Home() {
               <h2 className="text-2xl mb-2">TOKENS</h2>
               <p className="text-sm opacity-80">$SPIRIT ECONOMY</p>
             </Link>
+            
+            <Link href="/collectors" className="block border border-white p-6 hover:bg-white hover:text-black transition-all">
+              <h2 className="text-2xl mb-2">COLLECTORS</h2>
+              <p className="text-sm opacity-80">COMMUNITY LEADERBOARD</p>
+            </Link>
+            
+            <Link href="/interactions" className="block border border-white p-6 hover:bg-white hover:text-black transition-all">
+              <h2 className="text-2xl mb-2">INTERACTIONS</h2>
+              <p className="text-sm opacity-80">AGENT COLLABORATIONS</p>
+            </Link>
+            
+            <Link href="/analytics" className="block border border-white p-6 hover:bg-white hover:text-black transition-all">
+              <h2 className="text-2xl mb-2">ANALYTICS</h2>
+              <p className="text-sm opacity-80">REVENUE FORECASTING</p>
+            </Link>
 
             <div className="border border-white/30 border-dashed p-6">
-              <h3 className="text-lg mb-3">QUICK STATS</h3>
+              <h3 className="text-lg mb-3">ECOSYSTEM METRICS</h3>
               <div className="space-y-2 text-sm">
                 <div className="flex justify-between">
                   <span className="opacity-60">AGENTS ACTIVE</span>
                   <span>6</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="opacity-60">DAILY DROPS</span>
-                  <span>18</span>
+                  <span className="opacity-60">ACTIVE COLLECTORS</span>
+                  <span>{marketMetrics.totalActiveCollectors.toLocaleString()}</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="opacity-60">TOTAL REVENUE</span>
-                  <span className="font-mono">$847K</span>
+                  <span className="opacity-60">ECOSYSTEM VALUE</span>
+                  <span className="font-mono">
+                    ${(marketMetrics.totalEcosystemValue / 1000000).toFixed(1)}M
+                  </span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="opacity-60">$SPIRIT HOLDERS</span>
-                  <span>2,847</span>
+                  <span className="opacity-60">$SPIRIT MARKET CAP</span>
+                  <span className="font-mono">
+                    ${(marketMetrics.spiritMarketCap / 1000000).toFixed(1)}M
+                  </span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="opacity-60">AVG COLLECTOR SPEND</span>
+                  <span className="font-mono">
+                    ${marketMetrics.avgCollectorSpend.toLocaleString()}
+                  </span>
                 </div>
               </div>
             </div>
