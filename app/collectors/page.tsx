@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import CollectorLeaderboard from "@/components/CollectorLeaderboard";
 import SocialProofTicker from "@/components/SocialProofTicker";
-import { generateCollectors, getRecentGlobalActivity } from "@/lib/collectors";
+import { generateCollectors, getRecentGlobalActivity, type CollectorActivity } from "@/lib/collectors";
 
 export default function CollectorsPage() {
   const [stats, setStats] = useState({
@@ -14,11 +14,15 @@ export default function CollectorsPage() {
     avgPerCollector: 0
   });
 
-  const [recentActivity, setRecentActivity] = useState<any[]>([]);
+  interface ExtendedActivity extends CollectorActivity {
+    handle: string;
+  }
+  
+  const [recentActivity, setRecentActivity] = useState<ExtendedActivity[]>([]);
 
   useEffect(() => {
     const collectors = generateCollectors();
-    const activity = getRecentGlobalActivity(10);
+    const activity = getRecentGlobalActivity(10) as ExtendedActivity[];
     
     setStats({
       totalCollectors: collectors.length,

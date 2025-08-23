@@ -1,16 +1,20 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { getRecentGlobalActivity } from "@/lib/collectors";
+import { getRecentGlobalActivity, type CollectorActivity } from "@/lib/collectors";
 import Link from "next/link";
 
+interface ActivityWithHandle extends CollectorActivity {
+  handle: string;
+}
+
 export default function SocialProofTicker() {
-  const [activities, setActivities] = useState<any[]>([]);
+  const [activities, setActivities] = useState<ActivityWithHandle[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
     const loadActivities = () => {
-      const recentActivity = getRecentGlobalActivity(50);
+      const recentActivity = getRecentGlobalActivity(50) as ActivityWithHandle[];
       setActivities(recentActivity);
     };
 

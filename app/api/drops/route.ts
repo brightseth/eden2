@@ -1,9 +1,26 @@
 import { NextResponse } from 'next/server';
 import { getAgents } from '@/lib/db';
 
+interface DropData {
+  id: string;
+  agentId: string;
+  agentName: string;
+  title: string;
+  description: string;
+  type: string;
+  price: string;
+  currency: string;
+  dropTime: string;
+  status: string;
+  currentBid?: string;
+  bidders?: number;
+  stock?: number;
+  sold?: number;
+}
+
 function generateDropsForDate(date: Date) {
   const agents = getAgents();
-  const drops: any[] = [];
+  const drops: DropData[] = [];
 
   agents.forEach(agent => {
     const baseTime = new Date(date);
@@ -83,8 +100,8 @@ export async function GET(request: Request) {
     drops: drops,
     stats: {
       totalDrops: drops.length,
-      liveDrops: drops.filter((d: any) => d.status === "LIVE").length,
-      totalVolume: drops.reduce((sum: number, d: any) => {
+      liveDrops: drops.filter((d) => d.status === "LIVE").length,
+      totalVolume: drops.reduce((sum: number, d) => {
         if (d.type === "NFT") {
           return sum + parseFloat(d.currentBid || d.price) * 3000;
         }

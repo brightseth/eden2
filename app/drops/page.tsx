@@ -120,7 +120,7 @@ export default function DropsPage() {
   const [drops, setDrops] = useState<Drop[]>([]);
   const [currentTime, setCurrentTime] = useState(new Date());
   const [filter, setFilter] = useState<"ALL" | "LIVE" | "UPCOMING" | "ENDED">("ALL");
-  const [topCollectors, setTopCollectors] = useState<Record<string, any[]>>({});
+  const [topCollectors, setTopCollectors] = useState<Record<string, ReturnType<typeof getTopCollectorsForAgent>>>({});
   const [selectedDrop, setSelectedDrop] = useState<Drop | null>(null);
 
   useEffect(() => {
@@ -128,7 +128,7 @@ export default function DropsPage() {
     setDrops(dropsData);
     
     // Load top collectors for each agent
-    const collectorsData: Record<string, any[]> = {};
+    const collectorsData: Record<string, ReturnType<typeof getTopCollectorsForAgent>> = {};
     dropsData.forEach(drop => {
       if (!collectorsData[drop.agentId]) {
         collectorsData[drop.agentId] = getTopCollectorsForAgent(drop.agentId, 3);
@@ -163,7 +163,7 @@ export default function DropsPage() {
     setSelectedDrop(drop);
   };
 
-  const handlePurchaseComplete = (drop: Drop, details: any) => {
+  const handlePurchaseComplete = (drop: Drop, details: Record<string, unknown>) => {
     // Simulate purchase completion
     console.log("Purchase completed:", drop, details);
     alert(`✓ ${drop.type === "NFT" ? "Bid placed" : "Purchase complete"}: ${drop.title}`);
@@ -252,7 +252,7 @@ export default function DropsPage() {
                 <div className="pt-3 border-t border-white/30">
                   <div className="text-xs opacity-60 mb-2">TOP COLLECTORS</div>
                   <div className="flex gap-2">
-                    {topCollectors[drop.agentId].slice(0, 3).map((collector: any) => (
+                    {topCollectors[drop.agentId].slice(0, 3).map((collector) => (
                       <div key={collector.id} className="text-xs opacity-80">
                         @{collector.handle}
                       </div>
@@ -306,7 +306,7 @@ export default function DropsPage() {
 
         {/* Live Stats Bar */}
         <div className="mt-12 border border-white/30 border-dashed p-6">
-          <h3 className="text-lg mb-4">TODAY'S STATS</h3>
+          <h3 className="text-lg mb-4">TODAY&apos;S STATS</h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
             <div>
               <div className="opacity-60">TOTAL DROPS</div>

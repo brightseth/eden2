@@ -12,11 +12,12 @@ export default function RevenueForecasting({ agentId }: RevenueForecastingProps)
   const [projections, setProjections] = useState<RevenueProjection[]>([]);
   const [performance, setPerformance] = useState<AgentPerformanceData | null>(null);
   const [viewMode, setViewMode] = useState<"chart" | "table">("table");
-
-  const agents = getAgentPerformanceData();
+  const [agents, setAgents] = useState<AgentPerformanceData[]>([]);
 
   useEffect(() => {
-    const agentPerf = agents.find(a => a.agentId === selectedAgent);
+    const agentData = getAgentPerformanceData();
+    setAgents(agentData);
+    const agentPerf = agentData.find(a => a.agentId === selectedAgent);
     if (agentPerf) {
       setPerformance(agentPerf);
       setProjections(generateRevenueProjections(selectedAgent));

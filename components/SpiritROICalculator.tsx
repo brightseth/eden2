@@ -12,8 +12,8 @@ export default function SpiritROICalculator() {
     breakEvenMonths: number;
   } | null>(null);
   
-  const [marketMetrics, setMarketMetrics] = useState<any>(null);
-  const [topPerformers, setTopPerformers] = useState<any>(null);
+  const [marketMetrics, setMarketMetrics] = useState<ReturnType<typeof getMarketMetrics> | null>(null);
+  const [topPerformers, setTopPerformers] = useState<ReturnType<typeof getTopPerformers> | null>(null);
 
   useEffect(() => {
     const amount = parseFloat(investmentAmount) || 0;
@@ -78,7 +78,7 @@ export default function SpiritROICalculator() {
                     name="timeframe"
                     value={option.value}
                     checked={timeframe === option.value}
-                    onChange={(e) => setTimeframe(e.target.value as any)}
+                    onChange={(e) => setTimeframe(e.target.value as "month" | "quarter" | "year")}
                     className="w-4 h-4"
                   />
                   <span>{option.label}</span>
@@ -209,7 +209,7 @@ export default function SpiritROICalculator() {
             <div className="border border-white p-6">
               <h3 className="text-xl mb-4">TOP BY REVENUE</h3>
               <div className="space-y-3">
-                {topPerformers.byRevenue.slice(0, 3).map((agent: any, index: number) => (
+                {topPerformers.byRevenue.slice(0, 3).map((agent) => (
                   <div key={agent.agentId} className="flex justify-between items-center">
                     <div>
                       <div className="font-bold text-sm">{agent.agentName}</div>
@@ -233,7 +233,7 @@ export default function SpiritROICalculator() {
             <div className="border border-white p-6">
               <h3 className="text-xl mb-4">HIGHEST YIELDS</h3>
               <div className="space-y-3">
-                {topPerformers.byYield.slice(0, 3).map((agent: any, index: number) => (
+                {topPerformers.byYield.slice(0, 3).map((agent) => (
                   <div key={agent.agentId} className="flex justify-between items-center">
                     <div>
                       <div className="font-bold text-sm">{agent.agentName}</div>

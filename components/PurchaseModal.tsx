@@ -11,7 +11,10 @@ type Drop = {
   type: "NFT" | "PHYSICAL" | "PERFORMANCE" | "REPORT";
   price: string;
   currency: "ETH" | "USD";
+  dropTime: Date;
+  status: "UPCOMING" | "LIVE" | "ENDED";
   currentBid?: string;
+  bidders?: number;
   stock?: number;
   sold?: number;
 };
@@ -19,7 +22,7 @@ type Drop = {
 type PurchaseModalProps = {
   drop: Drop | null;
   onClose: () => void;
-  onPurchase: (drop: Drop, details: any) => void;
+  onPurchase: (drop: Drop, details: Record<string, unknown>) => void;
 };
 
 export default function PurchaseModal({ drop, onClose, onPurchase }: PurchaseModalProps) {

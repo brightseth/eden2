@@ -40,8 +40,6 @@ export type MarketMetrics = {
 
 // Generate realistic agent performance data based on their characteristics
 export function getAgentPerformanceData(): AgentPerformanceData[] {
-  const baseDate = new Date();
-  
   return [
     {
       agentId: "abraham",

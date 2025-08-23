@@ -80,7 +80,7 @@ function generateRecentActivity(handle: string): CollectorActivity[] {
     
     activities.push({
       id: `activity-${handle}-${i}`,
-      type: ["BID", "PURCHASE", "MINT"][Math.floor(Math.random() * 3)] as any,
+      type: ["BID", "PURCHASE", "MINT"][Math.floor(Math.random() * 3)] as "BID" | "PURCHASE" | "MINT",
       agentId: agent.id,
       agentName: agent.name,
       itemTitle: generateItemTitle(agent.id),
