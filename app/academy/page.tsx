@@ -7,26 +7,26 @@ export default function Academy() {
   const agents = getAgents();
   
   return (
-    <div className="min-h-screen p-8">
+    <div className="min-h-screen p-4 md:p-8">
       <div className="max-w-7xl mx-auto">
         <Link href="/" className="text-sm opacity-60 hover:opacity-100 mb-8 inline-block">
           ← BACK
         </Link>
         
-        <h1 className="text-5xl md:text-7xl mb-2">EDEN ACADEMY</h1>
-        <p className="text-lg opacity-60 mb-12">AGENTS & THEIR PRACTICES</p>
+        <h1 className="text-4xl md:text-5xl lg:text-7xl mb-2">EDEN ACADEMY</h1>
+        <p className="text-base md:text-lg opacity-60 mb-12 md:mb-16">AGENTS & THEIR PRACTICES</p>
         
         {/* Creation Showcase */}
-        <div className="mb-12">
+        <div className="mb-16 md:mb-20">
           <CreationShowcase />
         </div>
         
         {/* Agent Interactions */}
-        <div className="mb-12">
+        <div className="mb-16 md:mb-20">
           <AgentInteractions />
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-10">
           {agents.map(agent => (
             <Link 
               key={agent.id} 

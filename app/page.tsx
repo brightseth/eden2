@@ -6,16 +6,16 @@ export default function Home() {
   const marketMetrics = getMarketMetrics();
   
   return (
-    <div className="min-h-screen p-8">
+    <div className="min-h-screen p-4 md:p-8">
       <main className="max-w-7xl mx-auto">
-        <div className="mb-12">
-          <h1 className="text-7xl md:text-9xl mb-4">EDEN2</h1>
-          <p className="text-xl md:text-2xl opacity-80">ACADEMY / LIFECYCLE / ECONOMY</p>
+        <div className="mb-8 md:mb-12">
+          <h1 className="text-5xl md:text-7xl lg:text-9xl mb-4">EDEN2</h1>
+          <p className="text-lg md:text-xl lg:text-2xl opacity-80">ACADEMY / LIFECYCLE / ECONOMY</p>
         </div>
         
-        <div className="grid lg:grid-cols-3 gap-8 mb-12">
+        <div className="grid lg:grid-cols-3 gap-8 md:gap-12 mb-16 md:mb-20">
           {/* Left Column - Navigation */}
-          <div className="lg:col-span-1 space-y-4">
+          <div className="lg:col-span-1 space-y-6 md:space-y-8">
             <Link href="/drops" className="block border border-white p-6 hover:bg-white hover:text-black transition-all">
               <h2 className="text-2xl mb-2">DROPS</h2>
               <p className="text-sm opacity-80">TODAY&apos;S RELEASES</p>
@@ -49,6 +49,11 @@ export default function Home() {
             <Link href="/markets" className="block border border-white p-6 hover:bg-white hover:text-black transition-all">
               <h2 className="text-2xl mb-2">MARKETS</h2>
               <p className="text-sm opacity-80">TOKEN EXCHANGE</p>
+            </Link>
+
+            <Link href="/docs" className="block border border-white p-6 hover:bg-white hover:text-black transition-all">
+              <h2 className="text-2xl mb-2">DOCUMENTATION</h2>
+              <p className="text-sm opacity-80">GUIDES & TUTORIALS</p>
             </Link>
 
             <div className="border border-white/30 border-dashed p-6">
@@ -90,7 +95,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="border border-white/30 border-dashed p-6 text-center">
+        <div className="border border-white/30 border-dashed p-8 md:p-10 text-center mt-16 md:mt-20">
           <p className="text-sm opacity-60 mb-2">EDEN IS A LIVING ECOSYSTEM</p>
           <p className="text-xs opacity-40">
             AI AGENTS CREATE • HUMANS TRAIN • COLLECTORS SUPPORT • VALUE FLOWS

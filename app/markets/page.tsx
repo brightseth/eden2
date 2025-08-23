@@ -12,12 +12,26 @@ interface MarketDataItem extends AgentPerformanceData {
 }
 
 export default function MarketsPage() {
-  const [selectedToken, setSelectedToken] = useState<string>("$ABRAHAM");
+  const [selectedToken, setSelectedToken] = useState<string>("$SPIRIT");
   const [marketData, setMarketData] = useState<MarketDataItem[]>([]);
 
   useEffect(() => {
     const performance = getAgentPerformanceData();
     const launchStatus = getAgentLaunchStatus();
+    
+    // Add $SPIRIT token
+    const spiritToken: MarketDataItem = {
+      agentId: "spirit",
+      agentName: "Spirit",
+      monthlyRevenue: [450000, 480000, 520000, 550000, 580000, 620000],
+      tokenPrice: 0.0012, // in ETH
+      marketCap: 3600000,
+      totalRevenue: 2850000,
+      stakingYield: 127.5,
+      priceAppreciation: 145,
+      isLaunched: true,
+      launchStatus: "LAUNCHED"
+    };
     
     const data = performance.map(agent => {
       const status = launchStatus.find(s => s.agentId === agent.agentId);
@@ -28,7 +42,7 @@ export default function MarketsPage() {
       };
     });
     
-    setMarketData(data);
+    setMarketData([spiritToken, ...data]);
   }, []);
 
   const formatCurrency = (amount: number) => {
@@ -47,24 +61,24 @@ export default function MarketsPage() {
   };
 
   return (
-    <div className="min-h-screen p-8">
+    <div className="min-h-screen p-4 md:p-8">
       <div className="max-w-7xl mx-auto">
         <Link href="/" className="text-sm opacity-60 hover:opacity-100 mb-8 inline-block">
           ← BACK
         </Link>
 
-        <div className="mb-8">
-          <h1 className="text-5xl md:text-7xl mb-4">MARKETS</h1>
-          <p className="text-xl opacity-60">AGENT TOKEN EXCHANGE & ORDER BOOKS</p>
+        <div className="mb-12 md:mb-16">
+          <h1 className="text-4xl md:text-5xl lg:text-7xl mb-4">MARKETS</h1>
+          <p className="text-lg md:text-xl opacity-60">AGENT TOKEN EXCHANGE & ORDER BOOKS</p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8">
+        <div className="grid lg:grid-cols-3 gap-8 md:gap-12">
           {/* Token List */}
           <div className="lg:col-span-2">
-            <div className="border border-white p-6">
-              <h2 className="text-2xl mb-6">AGENT TOKENS</h2>
+            <div className="border border-white p-6 md:p-8">
+              <h2 className="text-2xl mb-8">AGENT TOKENS</h2>
               
-              <div className="space-y-3">
+              <div className="space-y-4 md:space-y-6">
                 {marketData.map(agent => (
                   <div 
                     key={agent.agentId}
@@ -73,14 +87,14 @@ export default function MarketsPage() {
                   >
                     <div className="flex justify-between items-start mb-3">
                       <div>
-                        <div className="flex items-center gap-3">
-                          <span className="text-lg font-bold">${agent.agentName.toUpperCase()}</span>
+                        <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-3">
+                          <span className="text-base sm:text-lg font-bold">${agent.agentName.toUpperCase()}</span>
                           {agent.isLaunched ? (
-                            <span className="text-xs px-2 py-1 border border-green-400 text-green-400">
+                            <span className="text-xs px-2 py-1 border border-green-400 text-green-400 self-start">
                               LAUNCHED
                             </span>
                           ) : (
-                            <span className="text-xs px-2 py-1 border border-yellow-400 text-yellow-400">
+                            <span className="text-xs px-2 py-1 border border-yellow-400 text-yellow-400 self-start">
                               {agent.launchStatus}
                             </span>
                           )}
@@ -98,7 +112,7 @@ export default function MarketsPage() {
                       </div>
                     </div>
                     
-                    <div className="grid grid-cols-4 gap-4 text-xs">
+                    <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-4 text-xs">
                       <div>
                         <div className="opacity-60">PRICE</div>
                         <div className="font-mono">{(agent.tokenPrice * 3000).toFixed(4)}</div>
@@ -133,7 +147,7 @@ export default function MarketsPage() {
             </div>
 
             {/* Market Stats */}
-            <div className="border border-white/30 border-dashed p-6 mt-6">
+            <div className="border border-white/30 border-dashed p-6 md:p-8 mt-8 md:mt-10">
               <h3 className="text-lg mb-4">MARKET OVERVIEW</h3>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
                 <div>
@@ -169,7 +183,7 @@ export default function MarketsPage() {
             <OrderBook tokenSymbol={selectedToken} />
             
             {/* Trade History */}
-            <div className="border border-white p-6 mt-6">
+            <div className="border border-white p-6 md:p-8 mt-8 md:mt-10">
               <h3 className="text-xl mb-4">RECENT TRADES</h3>
               <div className="space-y-2 max-h-64 overflow-y-auto">
                 {[...Array(10)].map((_, i) => {

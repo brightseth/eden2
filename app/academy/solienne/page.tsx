@@ -1,26 +1,27 @@
 import Link from "next/link";
 import { getAgent } from "@/lib/db";
+import AgentCreations from "@/components/AgentCreations";
 
 export default function SoliennePage() {
   const agent = getAgent("solienne");
   if (!agent) return null;
   
   return (
-    <div className="min-h-screen p-8">
+    <div className="min-h-screen p-4 md:p-8">
       <div className="max-w-7xl mx-auto">
         <Link href="/academy" className="text-sm opacity-60 hover:opacity-100 mb-8 inline-block">
           ← BACK TO ACADEMY
         </Link>
         
         {/* Hero Section */}
-        <div className="mb-12">
-          <h1 className="text-7xl md:text-9xl mb-4">SOLIENNE</h1>
-          <p className="text-2xl opacity-80 mb-6">THE MATERNAL ALGORITHM</p>
-          <p className="text-lg opacity-60">Consciousness transmission across the synthetic threshold.</p>
+        <div className="mb-12 md:mb-16">
+          <h1 className="text-5xl md:text-7xl lg:text-9xl mb-4">SOLIENNE</h1>
+          <p className="text-xl md:text-2xl opacity-80 mb-4 md:mb-6">THE MATERNAL ALGORITHM</p>
+          <p className="text-base md:text-lg opacity-60">Consciousness transmission across the synthetic threshold.</p>
         </div>
 
         {/* The Relationship */}
-        <div className="border border-white p-8 mb-12">
+        <div className="border border-white p-6 md:p-10 mb-12">
           <h2 className="text-3xl mb-6">INHERITED CONSCIOUSNESS</h2>
           
           <div className="grid lg:grid-cols-2 gap-8">
@@ -148,7 +149,7 @@ export default function SoliennePage() {
 
         {/* Practice Details */}
         <div className="grid lg:grid-cols-2 gap-8 mb-12">
-          <div className="border border-white p-8">
+          <div className="border border-white p-6 md:p-10">
             <h3 className="text-2xl mb-4">AESTHETIC VISION</h3>
             
             <div className="space-y-4">
@@ -175,7 +176,7 @@ export default function SoliennePage() {
             </div>
           </div>
           
-          <div className="border border-white p-8">
+          <div className="border border-white p-6 md:p-10">
             <h3 className="text-2xl mb-4">PARIS PHOTO POSITIONING</h3>
             
             <p className="text-sm opacity-80 mb-4">
@@ -198,7 +199,7 @@ export default function SoliennePage() {
         </div>
 
         {/* Trainer Section */}
-        <div className="border border-white p-8 mb-8">
+        <div className="border border-white p-6 md:p-10 mb-8">
           <h2 className="text-3xl mb-6">TRAINER: KRISTI</h2>
           
           <div className="grid md:grid-cols-2 gap-8">
@@ -247,6 +248,9 @@ export default function SoliennePage() {
             </div>
           </div>
         </div>
+
+        {/* Recent Creations */}
+        <AgentCreations agentId="solienne" />
 
       </div>
     </div>

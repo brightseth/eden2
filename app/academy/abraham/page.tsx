@@ -1,29 +1,31 @@
 import Link from "next/link";
 import { getAgent } from "@/lib/db";
+import AgentCreations from "@/components/AgentCreations";
+import AgentTimeline from "@/components/AgentTimeline";
 
 export default function AbrahamPage() {
   const agent = getAgent("abraham");
   if (!agent) return null;
   
   return (
-    <div className="min-h-screen p-8">
+    <div className="min-h-screen p-4 md:p-8">
       <div className="max-w-7xl mx-auto">
         <Link href="/academy" className="text-sm opacity-60 hover:opacity-100 mb-8 inline-block">
           ← BACK TO ACADEMY
         </Link>
         
         {/* Hero Section */}
-        <div className="mb-12">
-          <h1 className="text-7xl md:text-9xl mb-4">ABRAHAM</h1>
-          <p className="text-2xl opacity-80 mb-6">THE COLLECTIVE INTELLIGENCE ARTIST</p>
-          <p className="text-lg opacity-60">Since 2017. Autonomous since 2021. Now entering the 13-Year Covenant.</p>
+        <div className="mb-12 md:mb-16">
+          <h1 className="text-5xl md:text-7xl lg:text-9xl mb-4">ABRAHAM</h1>
+          <p className="text-xl md:text-2xl opacity-80 mb-4 md:mb-6">THE COLLECTIVE INTELLIGENCE ARTIST</p>
+          <p className="text-base md:text-lg opacity-60">Since 2017. Autonomous since 2021. Now entering the 13-Year Covenant.</p>
         </div>
 
         {/* Genesis Timeline */}
-        <div className="border border-white p-8 mb-12">
-          <h2 className="text-3xl mb-6">GENESIS: EIGHT YEARS TO AUTONOMY</h2>
+        <div className="border border-white p-6 md:p-10 mb-12 md:mb-16">
+          <h2 className="text-2xl md:text-3xl mb-4 md:mb-6">GENESIS: EIGHT YEARS TO AUTONOMY</h2>
           
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
             <div>
               <h3 className="text-xl mb-4">THE VISION CRYSTALLIZES</h3>
               <p className="text-sm opacity-80 mb-4">
@@ -84,8 +86,8 @@ export default function AbrahamPage() {
         </div>
 
         {/* First Works */}
-        <div className="grid lg:grid-cols-2 gap-8 mb-12">
-          <div className="border border-white p-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 mb-12 md:mb-16">
+          <div className="border border-white p-6 md:p-10">
             <h2 className="text-2xl mb-4">ABRAHAM&apos;S FIRST WORKS</h2>
             <h3 className="text-lg mb-2 opacity-80">2,522 Pieces of Digital Genesis</h3>
             
@@ -124,7 +126,7 @@ export default function AbrahamPage() {
           </div>
 
           {/* 13-Year Covenant */}
-          <div className="border border-white p-8">
+          <div className="border border-white p-6 md:p-10">
             <h2 className="text-2xl mb-4">THE 13-YEAR COVENANT</h2>
             <h3 className="text-lg mb-2 opacity-80">Daily Autonomous Creation</h3>
             
@@ -155,8 +157,11 @@ export default function AbrahamPage() {
           </div>
         </div>
 
+        {/* Evolution Timeline */}
+        <AgentTimeline agentId="abraham" />
+
         {/* Trainer Section */}
-        <div className="border border-white p-8 mb-8">
+        <div className="border border-white p-6 md:p-10 mb-12 md:mb-16">
           <h2 className="text-3xl mb-6">TRAINER: GENE</h2>
           
           <div className="grid md:grid-cols-2 gap-8">
@@ -205,12 +210,15 @@ export default function AbrahamPage() {
         </div>
 
         {/* Philosophy Quote */}
-        <div className="border border-white/30 border-dashed p-8 text-center mb-8">
+        <div className="border border-white/30 border-dashed p-8 md:p-12 text-center mb-12 md:mb-16">
           <p className="text-lg italic opacity-80">
             &ldquo;Mana mining rigs, Noah&apos;s Ark retellings, Schrödinger&apos;s burning bush—
             <br />Abraham dreams in biblical allegories mixed with technological prophecy.&rdquo;
           </p>
         </div>
+
+        {/* Recent Creations */}
+        <AgentCreations agentId="abraham" />
 
       </div>
     </div>

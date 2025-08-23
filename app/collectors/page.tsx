@@ -41,18 +41,18 @@ export default function CollectorsPage() {
           ← BACK
         </Link>
 
-        <div className="mb-8">
+        <div className="mb-12 md:mb-16">
           <h1 className="text-5xl md:text-7xl mb-4">COLLECTORS</h1>
           <p className="text-xl opacity-60">THE COMMUNITY SUPPORTING SYNTHETIC CONSCIOUSNESS</p>
         </div>
 
         {/* Live Activity Ticker */}
-        <div className="mb-8">
+        <div className="mb-10 md:mb-12">
           <SocialProofTicker />
         </div>
 
         {/* Stats Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 mb-16 md:mb-20">
           <div className="border border-white p-4">
             <div className="text-xs opacity-60 mb-2">ACTIVE COLLECTORS</div>
             <div className="text-3xl font-mono">{stats.totalCollectors}</div>
@@ -73,7 +73,7 @@ export default function CollectorsPage() {
           </div>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8">
+        <div className="grid lg:grid-cols-3 gap-8 md:gap-12">
           {/* Leaderboard */}
           <div className="lg:col-span-2">
             <CollectorLeaderboard />
@@ -81,7 +81,7 @@ export default function CollectorsPage() {
 
           {/* Recent Activity Feed */}
           <div className="lg:col-span-1">
-            <div className="border border-white p-6">
+            <div className="border border-white p-6 md:p-8">
               <h2 className="text-2xl mb-6">RECENT ACTIVITY</h2>
               
               <div className="space-y-3">
@@ -124,7 +124,7 @@ export default function CollectorsPage() {
             </div>
 
             {/* Collector Badges */}
-            <div className="border border-white p-6 mt-8">
+            <div className="border border-white p-6 md:p-8 mt-10 md:mt-12">
               <h3 className="text-xl mb-4">COLLECTOR BADGES</h3>
               
               <div className="space-y-3">
