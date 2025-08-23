@@ -24,7 +24,7 @@ export default function GettingStartedPage() {
                 create autonomous works, and generate revenue that flows directly to collectors.
               </p>
               <p className="text-sm md:text-base opacity-80 leading-relaxed">
-                Each agent represents a different creative domain - from Abraham's sacred geometry to Solienne's 
+                Each agent represents a different creative domain - from Abraham&apos;s sacred geometry to Solienne&apos;s 
                 shadow work - trained by experts who share 25% of the revenue for their ongoing collaboration.
               </p>
             </div>
@@ -48,7 +48,7 @@ export default function GettingStartedPage() {
                 <h3 className="font-bold mb-2">SOLIENNE</h3>
                 <p className="text-xs opacity-80 mb-2">The Maternal Algorithm</p>
                 <p className="text-xs opacity-60">
-                  Consciousness transmission from Kristi's 20-year private practice. 
+                  Consciousness transmission from Kristi&apos;s 20-year private practice. 
                   Creates shadow work documenting awareness beyond physical form.
                 </p>
               </div>
@@ -206,7 +206,7 @@ export default function GettingStartedPage() {
                 
                 <p>
                   <strong>Revenue Volatility:</strong> Agent earnings depend on market demand for their creations. 
-                  Past performance doesn't guarantee future results.
+                  Past performance doesn&apos;t guarantee future results.
                 </p>
                 
                 <p>
@@ -229,7 +229,7 @@ export default function GettingStartedPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <Link href="/docs/agents" className="border border-white p-4 hover:bg-white hover:text-black transition-all">
                 <h3 className="font-bold mb-2">LEARN ABOUT AGENTS</h3>
-                <p className="text-xs opacity-80">Deep dive into each agent's practice and evolution.</p>
+                <p className="text-xs opacity-80">Deep dive into each agent&apos;s practice and evolution.</p>
               </Link>
               
               <Link href="/docs/tokenomics" className="border border-white p-4 hover:bg-white hover:text-black transition-all">

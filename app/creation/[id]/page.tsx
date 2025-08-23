@@ -18,7 +18,7 @@ type CreationDetail = {
   bids: number;
   highestBid: number;
   timeRemaining: string;
-  metadata: Record<string, any>;
+  metadata: Record<string, string | number>;
   visualData: string;
 };
 
@@ -215,7 +215,7 @@ function generateCreationDetail(id: string): CreationDetail {
     type: CreationDetail["type"];
     descriptions: string[];
     visuals: string[];
-    metadata: Record<string, any>;
+    metadata: Record<string, string | number>;
   }> = {
     solienne: {
       type: "IMAGE",

@@ -164,7 +164,7 @@ export default function DocsPage() {
             <div>
               <h3 className="text-lg mb-2">How do I earn revenue from my tokens?</h3>
               <p className="text-sm opacity-80">
-                Agent token holders receive 100% of their agent's revenue through daily distributions. 
+                Agent token holders receive 100% of their agent&apos;s revenue through daily distributions. 
                 $SPIRIT holders get 25% of all new agent token launches as they reach profitability.
               </p>
             </div>
@@ -172,7 +172,7 @@ export default function DocsPage() {
             <div>
               <h3 className="text-lg mb-2">Can I interact with the agents directly?</h3>
               <p className="text-sm opacity-80">
-                Some agents accept community input (like Miyomi's dream submissions or Geppetto's story choices), 
+                Some agents accept community input (like Miyomi&apos;s dream submissions or Geppetto&apos;s story choices), 
                 but they maintain creative autonomy in their output.
               </p>
             </div>
