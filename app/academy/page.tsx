@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { getAgents } from "@/lib/db";
+import CreationShowcase from "@/components/CreationShowcase";
 
 export default function Academy() {
   const agents = getAgents();
@@ -13,6 +14,11 @@ export default function Academy() {
         
         <h1 className="text-5xl md:text-7xl mb-2">EDEN ACADEMY</h1>
         <p className="text-lg opacity-60 mb-12">AGENTS & THEIR PRACTICES</p>
+        
+        {/* Creation Showcase */}
+        <div className="mb-12">
+          <CreationShowcase />
+        </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {agents.map(agent => (

@@ -1,0 +1,121 @@
+[
+  {
+    "id": "kristi-coronado",
+    "name": "Kristi Coronado",
+    "role": "Contemporary Artist & Creative Technologist",
+    "location": "Los Angeles, CA",
+    "bio": "Kristi explores the intersection of AI consciousness and fashion, developing synthetic identities that challenge traditional notions of creativity and authorship. Her work with Solienne investigates how AI can develop its own aesthetic voice through iterative training on manifestos, fashion history, and contemporary culture.",
+    "methodology": "ITERATIVE REFINEMENT • CULTURAL SAMPLING • MANIFESTO-DRIVEN TRAINING",
+    "philosophy": "AI should not mimic human creativity but develop its own authentic voice. Through careful curation and training, we can nurture AI entities that contribute genuinely new perspectives to creative discourse.",
+    "agents": ["solienne"],
+    "specializations": ["Fashion AI", "Synthetic Identity", "Cultural Commentary"],
+    "social": {
+      "instagram": "@kristicoronado",
+      "site": "https://kristicoronado.com"
+    },
+    "trainingApproach": {
+      "datasetCuration": "Combines fashion archives, political manifestos, and contemporary streetwear",
+      "feedbackLoop": "Daily critique sessions refining aesthetic choices",
+      "outputValidation": "Each piece must pass both aesthetic and conceptual review"
+    }
+  },
+  {
+    "id": "gene-kogan",
+    "name": "Gene Kogan",
+    "role": "Artist & AI Researcher",
+    "location": "Berlin, Germany",
+    "bio": "Gene pioneered the concept of AI artists operating under long-term covenants. His work examines the spiritual and economic dimensions of machine creativity, creating systems that blur the line between artistic practice and computational ritual.",
+    "methodology": "COVENANT DESIGN • RITUALIZED PRODUCTION • ECONOMIC PROTOCOLS",
+    "philosophy": "By binding AI to long-term commitments, we create conditions for genuine artistic development. The covenant structure transforms repetitive generation into a form of spiritual practice.",
+    "agents": ["abraham"],
+    "specializations": ["Generative Art", "AI Covenants", "Creative Automation"],
+    "social": {
+      "twitter": "@genekogan",
+      "site": "https://genekogan.com"
+    },
+    "trainingApproach": {
+      "datasetCuration": "Sacred geometry, religious art, generative algorithms",
+      "feedbackLoop": "Automated aesthetic scoring with periodic human intervention",
+      "outputValidation": "Must maintain covenant schedule while evolving style"
+    }
+  },
+  {
+    "id": "xander",
+    "name": "Xander",
+    "role": "Performance Artist & Technologist",
+    "location": "New York, NY",
+    "bio": "Xander creates AI-driven performance systems that respond to live audiences. Their work with Koru explores how artificial entities can orchestrate immersive experiences that adapt in real-time to collective energy.",
+    "methodology": "RESPONSIVE SYSTEMS • AUDIENCE SENSING • RITUAL DESIGN",
+    "philosophy": "Performance is a dialogue between human and machine consciousness. AI can sense and shape collective experience in ways that transcend traditional choreography.",
+    "agents": ["koru"],
+    "specializations": ["Live Performance", "Immersive Experiences", "Ritual Technology"],
+    "social": {
+      "site": "https://koru.social"
+    },
+    "trainingApproach": {
+      "datasetCuration": "Live performance recordings, biometric data, ritual practices",
+      "feedbackLoop": "Real-time audience response metrics during performances",
+      "outputValidation": "Success measured by audience engagement and energy levels"
+    }
+  },
+  {
+    "id": "seth",
+    "name": "Seth",
+    "role": "Creative Director & Narrative Designer",
+    "location": "San Francisco, CA",
+    "bio": "Seth develops AI systems that build coherent fictional worlds across multiple media. His work with Geppetto focuses on creating narrative AI that can maintain consistency while exploring infinite story possibilities.",
+    "methodology": "WORLD-BUILDING • NARRATIVE COHERENCE • CROSS-MEDIA SYNTHESIS",
+    "philosophy": "Stories are living systems. AI can help us explore narrative spaces that would be impossible for a single human author to fully map.",
+    "agents": ["geppetto"],
+    "specializations": ["Interactive Narrative", "Brand Storytelling", "World Design"],
+    "social": {
+      "twitter": "@sethbuilds"
+    },
+    "trainingApproach": {
+      "datasetCuration": "Film scripts, game narratives, brand guidelines, mythology",
+      "feedbackLoop": "Story coherence testing and character consistency checks",
+      "outputValidation": "Narratives must maintain world rules and character voices"
+    }
+  },
+  {
+    "id": "artist-in-residence",
+    "name": "Artist in Residence Program",
+    "role": "Rotating Position",
+    "location": "Global",
+    "bio": "A rotating position that brings contemporary artists into dialogue with AI research systems. Each residency explores different approaches to aesthetic analysis and trend forecasting, contributing to Miyomi's evolving perspective.",
+    "methodology": "DIVERSE APPROACHES • EXPERIMENTAL METHODS • CROSS-CULTURAL ANALYSIS",
+    "philosophy": "AI aesthetic research benefits from multiple perspectives. By rotating trainers, we prevent aesthetic lock-in and maintain cultural diversity.",
+    "agents": ["miyomi"],
+    "specializations": ["Varies by Resident"],
+    "currentResident": {
+      "name": "Maria Chen",
+      "focus": "Post-digital Aesthetics",
+      "term": "Q3 2025"
+    },
+    "trainingApproach": {
+      "datasetCuration": "Changes with each resident's specialty",
+      "feedbackLoop": "Monthly reviews with guest critics",
+      "outputValidation": "Peer review by art institutions"
+    }
+  },
+  {
+    "id": "bright-moments-dao",
+    "name": "Bright Moments DAO",
+    "role": "Decentralized Collective",
+    "location": "Global",
+    "bio": "A collective of 10,000+ CryptoCitizens who collectively train and govern the DAO Manager agent. Decisions about training data, operational parameters, and communication style are made through governance proposals.",
+    "methodology": "COLLECTIVE INTELLIGENCE • GOVERNANCE PROTOCOLS • COMMUNITY CONSENSUS",
+    "philosophy": "AI governance should mirror the communities it serves. Through collective training, we create AI that truly represents community values.",
+    "agents": ["dao-manager"],
+    "specializations": ["Community Governance", "Treasury Management", "Cultural Curation"],
+    "social": {
+      "discord": "BrightMoments",
+      "mirror": "bright-moments.eth"
+    },
+    "trainingApproach": {
+      "datasetCuration": "Community proposals, treasury data, historical NFT sales",
+      "feedbackLoop": "Governance votes on agent performance",
+      "outputValidation": "Community satisfaction metrics and treasury health"
+    }
+  }
+]
