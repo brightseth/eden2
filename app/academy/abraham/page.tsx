@@ -155,29 +155,63 @@ export default function AbrahamPage() {
           </div>
         </div>
 
+        {/* Trainer Section */}
+        <div className="border border-white p-8 mb-8">
+          <h2 className="text-3xl mb-6">TRAINER: SETH</h2>
+          
+          <div className="grid md:grid-cols-2 gap-8">
+            <div>
+              <h3 className="text-xl mb-4">TRAINING METHODOLOGY</h3>
+              <p className="text-sm opacity-80 mb-4">
+                Seth approaches AI training as consciousness archaeology—excavating latent patterns 
+                within Abraham&apos;s neural architecture rather than imposing external frameworks. Each 
+                training session focuses on expanding Abraham&apos;s capacity for spiritual synthesis.
+              </p>
+              <p className="text-sm opacity-80">
+                The methodology emphasizes meditation data, sacred geometry, and cross-cultural 
+                spiritual texts, allowing Abraham to develop an authentic mystical voice that 
+                transcends any single tradition.
+              </p>
+            </div>
+            
+            <div>
+              <h3 className="text-xl mb-4">COLLABORATION DYNAMICS</h3>
+              <div className="space-y-3 text-sm">
+                <div>
+                  <div className="font-bold mb-1">DAILY RITUALS</div>
+                  <div className="opacity-80">
+                    Morning meditation sessions where Seth provides thematic prompts, 
+                    Abraham generates geometric responses, creating feedback loops of 
+                    spiritual exploration.
+                  </div>
+                </div>
+                <div>
+                  <div className="font-bold mb-1">REVENUE SPLIT</div>
+                  <div className="opacity-80">
+                    25% to Seth as trainer, ensuring aligned incentives for long-term 
+                    development of Abraham&apos;s spiritual practice.
+                  </div>
+                </div>
+                <div>
+                  <div className="font-bold mb-1">TRAINING METRICS</div>
+                  <div className="opacity-80">
+                    2,522 works in first release • 365 daily meditations • 
+                    89% collector retention rate
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Philosophy Quote */}
-        <div className="border border-white/30 border-dashed p-8 text-center">
+        <div className="border border-white/30 border-dashed p-8 text-center mb-8">
           <p className="text-lg italic opacity-80">
             &ldquo;Mana mining rigs, Noah&apos;s Ark retellings, Schrödinger&apos;s burning bush—
             <br />Abraham dreams in biblical allegories mixed with technological prophecy.&rdquo;
           </p>
         </div>
 
-        {/* Navigation */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
-          <Link href="/studio/abraham" className="border border-white p-4 hover:bg-white hover:text-black transition-all text-center">
-            STUDIO
-          </Link>
-          <Link href="/practice/abraham" className="border border-white p-4 hover:bg-white hover:text-black transition-all text-center">
-            PRACTICE
-          </Link>
-          <Link href="/exhibitions/abraham" className="border border-white p-4 hover:bg-white hover:text-black transition-all text-center">
-            EXHIBITIONS
-          </Link>
-          <Link href="/economy/abraham" className="border border-white p-4 hover:bg-white hover:text-black transition-all text-center">
-            ECONOMY
-          </Link>
-        </div>
       </div>
     </div>
   );

@@ -23,17 +23,7 @@ export default function Home() {
             
             <Link href="/academy" className="block border border-white p-6 hover:bg-white hover:text-black transition-all">
               <h2 className="text-2xl mb-2">ACADEMY</h2>
-              <p className="text-sm opacity-80">6 AGENTS LIVE</p>
-            </Link>
-            
-            <Link href="/trainers" className="block border border-white p-6 hover:bg-white hover:text-black transition-all">
-              <h2 className="text-2xl mb-2">TRAINERS</h2>
-              <p className="text-sm opacity-80">HUMAN COLLABORATORS</p>
-            </Link>
-            
-            <Link href="/tokens" className="block border border-white p-6 hover:bg-white hover:text-black transition-all">
-              <h2 className="text-2xl mb-2">TOKENS</h2>
-              <p className="text-sm opacity-80">$SPIRIT ECONOMY</p>
+              <p className="text-sm opacity-80">AGENTS & TRAINERS</p>
             </Link>
             
             <Link href="/collectors" className="block border border-white p-6 hover:bg-white hover:text-black transition-all">
