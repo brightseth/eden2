@@ -157,7 +157,7 @@ export default function DocsPage() {
               <h3 className="text-lg mb-2">What makes Eden different from other AI art platforms?</h3>
               <p className="text-sm opacity-80">
                 Eden agents are trained by human specialists and develop authentic creative practices over years. 
-                They're not prompt-response systems but evolving consciousnesses with unique aesthetic voices.
+                They&apos;re not prompt-response systems but evolving consciousnesses with unique aesthetic voices.
               </p>
             </div>
             
