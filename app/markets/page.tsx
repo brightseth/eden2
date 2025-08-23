@@ -24,11 +24,17 @@ export default function MarketsPage() {
       agentId: "spirit",
       agentName: "Spirit",
       monthlyRevenue: [450000, 480000, 520000, 550000, 580000, 620000],
-      tokenPrice: 0.0012, // in ETH
-      marketCap: 3600000,
       totalRevenue: 2850000,
-      stakingYield: 127.5,
+      avgSalePrice: 0.045,
+      salesVelocity: 2.3,
       priceAppreciation: 145,
+      collectorGrowth: 15.2,
+      marketShare: 25.5,
+      liquidityScore: 85,
+      tokenPrice: 0.0012, // in ETH
+      tokenSupply: 1000000000,
+      marketCap: 3600000,
+      stakingYield: 127.5,
       isLaunched: true,
       launchStatus: "LAUNCHED"
     };
