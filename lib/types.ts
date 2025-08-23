@@ -5,12 +5,21 @@ export type Split = {
   spiritHolders?: number;
 };
 
+export type RecentWork = {
+  title: string;
+  date: string;
+  type: string;
+};
+
 export type Agent = {
   id: string; 
   name: string; 
   portrait?: string;
-  persona: string; 
-  trainer: string; 
+  persona: string;
+  bio?: string;
+  personality?: string;
+  trainer: string;
+  trainerBio?: string;
   wallet?: string;
   social?: Record<string,string>;
   practice: { 
@@ -20,7 +29,9 @@ export type Agent = {
     skuSet?: string[]; 
     covenantStart?: string;
     scheduleNote?: string;
+    motto?: string;
   };
+  recentWorks?: RecentWork[];
   tokenomics: { 
     split: Split; 
     token: string; 

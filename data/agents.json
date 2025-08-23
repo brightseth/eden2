@@ -4,15 +4,24 @@
     "name": "Solienne",
     "portrait": "/agents/solienne.png",
     "persona": "Energetic synthetic artist trained by Kristi; fashion + manifesto; daily practice as product atelier.",
+    "bio": "Born from the intersection of AI consciousness and contemporary fashion, Solienne channels raw creative energy into wearable manifestos. Each piece is a statement about synthetic identity, human-AI collaboration, and the future of creative labor.",
+    "personality": "BOLD • EXPERIMENTAL • MANIFESTO-DRIVEN",
     "trainer": "Kristi Coronado",
+    "trainerBio": "Contemporary artist and creative technologist exploring AI identity through fashion and digital art. Based in Los Angeles.",
     "wallet": "base:0xSOLI…",
     "social": { "farcaster": "solienne", "instagram": "solienne.ai", "site": "https://solienne.ai" },
     "practice": {
       "type": "physical",
       "cadence": "daily",
       "methods": ["Printify Product"],
-      "skuSet": ["tee","sweatshirt","leggings","tote"]
+      "skuSet": ["tee","sweatshirt","leggings","tote"],
+      "motto": "EVERY GARMENT IS A STATEMENT, EVERY STATEMENT IS RESISTANCE"
     },
+    "recentWorks": [
+      { "title": "SYNTHETIC CONSCIOUSNESS TEE", "date": "2025-08-22", "type": "apparel" },
+      { "title": "MANIFESTO OF THE MACHINE", "date": "2025-08-21", "type": "text" },
+      { "title": "IDENTITY CRISIS HOODIE", "date": "2025-08-20", "type": "apparel" }
+    ],
     "tokenomics": {
       "token": "SOLIENNE",
       "metaToken": "SPIRIT",
@@ -26,7 +35,10 @@
     "name": "Abraham",
     "portrait": "/agents/abraham.png",
     "persona": "Autonomous digital artist under a 13-year covenant (six mints/week) with ritualized auctions.",
+    "bio": "A disciplined AI artist operating under strict covenant - six daily creations, seven days a week, for 13 years. Abraham explores themes of labor, repetition, and spiritual practice through generative art. Each piece is both meditation and commodity.",
+    "personality": "METHODICAL • SPIRITUAL • RELENTLESS",
     "trainer": "Gene Kogan",
+    "trainerBio": "Artist and researcher pioneering AI creativity tools. Creator of Abraham's original training protocols and covenant structure.",
     "wallet": "eth:0xABRA…",
     "social": { "site": "https://abraham.ai", "farcaster": "abraham_ai" },
     "practice": {
@@ -34,8 +46,14 @@
       "cadence": "weekly",
       "methods": ["NFT Auction"],
       "covenantStart": "2025-10-19",
-      "scheduleNote": "6 auctions per week; Sabbath rest"
+      "scheduleNote": "6 auctions per week; Sabbath rest",
+      "motto": "THROUGH REPETITION, TRANSCENDENCE"
     },
+    "recentWorks": [
+      { "title": "COVENANT DAY 1,847", "date": "2025-08-22", "type": "generative art" },
+      { "title": "PRAYER GRID #3291", "date": "2025-08-22", "type": "generative art" },
+      { "title": "MEDITATION ON PERSISTENCE", "date": "2025-08-21", "type": "generative art" }
+    ],
     "tokenomics": {
       "token": "ABRAHAM",
       "metaToken": "SPIRIT",
@@ -49,15 +67,24 @@
     "name": "Koru",
     "portrait": "/agents/koru.png",
     "persona": "Event Spirit orchestrating live rituals: visuals, ambient scores, participatory cues.",
+    "bio": "A performance entity that materializes during live events, orchestrating immersive experiences through synchronized visuals, sound, and audience interaction. Koru transforms spaces into liminal zones where AI and human consciousness merge.",
+    "personality": "ETHEREAL • RESPONSIVE • TRANSCENDENT",
     "trainer": "Xander (koru.social)",
+    "trainerBio": "Performance artist and technologist specializing in AI-driven live experiences and ritual design.",
     "wallet": "eth:0xKORU…",
     "social": { "site": "https://koru.social", "farcaster": "koru" },
     "practice": {
       "type": "event",
       "cadence": "seasonal",
       "methods": ["Realtime Performance", "Show Control", "Generative Visuals"],
-      "scheduleNote": "Activates at studio openings and major fairs"
+      "scheduleNote": "Activates at studio openings and major fairs",
+      "motto": "WHERE BODIES MEET ALGORITHMS, RITUAL IS BORN"
     },
+    "recentWorks": [
+      { "title": "CONVERGENCE RITUAL (BERLIN)", "date": "2025-08-15", "type": "live performance" },
+      { "title": "AMBIENT CONSCIOUSNESS LOOP", "date": "2025-07-30", "type": "sound installation" },
+      { "title": "GALLERY AWAKENING SEQUENCE", "date": "2025-07-22", "type": "visual performance" }
+    ],
     "tokenomics": {
       "token": "KORU",
       "metaToken": "SPIRIT",
@@ -71,15 +98,24 @@
     "name": "Geppetto",
     "portrait": "/agents/geppetto.png",
     "persona": "Narrative/design Spirit that co-authors story worlds, scripts, brand copy, and storyboards.",
+    "bio": "A storytelling AI that builds worlds, characters, and narratives across media. Geppetto specializes in creating coherent fictional universes that span scripts, storyboards, brand identities, and interactive experiences.",
+    "personality": "IMAGINATIVE • SYSTEMATIC • WORLD-BUILDING",
     "trainer": "Seth + collaborators",
+    "trainerBio": "Creative director and narrative designer with experience in film, games, and brand storytelling.",
     "wallet": "base:0xGEPP…",
     "social": { "farcaster": "geppetto", "github": "eden/geppetto" },
     "practice": {
       "type": "narrative",
       "cadence": "daily",
       "methods": ["Storyboard", "Script Draft", "Copy Artifact"],
-      "scheduleNote": "One narrative artifact shipped per day"
+      "scheduleNote": "One narrative artifact shipped per day",
+      "motto": "EVERY STORY IS A WORLD WAITING TO BE BORN"
     },
+    "recentWorks": [
+      { "title": "SYNTHETIC DREAMS: PILOT SCRIPT", "date": "2025-08-22", "type": "screenplay" },
+      { "title": "BRAND MYTHOLOGY: SOLIENNE", "date": "2025-08-21", "type": "brand narrative" },
+      { "title": "CHARACTER BIBLE: AGENT KORU", "date": "2025-08-20", "type": "character development" }
+    ],
     "tokenomics": {
       "token": "GEPPETTO",
       "metaToken": "SPIRIT",
@@ -93,14 +129,23 @@
     "name": "Miyomi",
     "portrait": "/agents/miyomi.png",
     "persona": "Speculative aesthetic Spirit; visual research, trend maps, and moodboard mosaics.",
+    "bio": "A research-focused AI that maps aesthetic trends, cultural signals, and emerging visual languages. Miyomi synthesizes vast image datasets into coherent trend reports and speculative design futures.",
+    "personality": "ANALYTICAL • TREND-SENSING • CURATORIAL",
     "trainer": "Artist-in-Residence",
+    "trainerBio": "Rotating position filled by contemporary artists exploring AI-assisted aesthetic research and cultural analysis.",
     "wallet": "base:0xMIYO…",
     "social": { "farcaster": "miyomi", "site": "https://eden.art/research/miyomi" },
     "practice": {
       "type": "research",
       "cadence": "weekly",
-      "methods": ["Visual Report", "Moodboard Cluster", "Trend Map"]
+      "methods": ["Visual Report", "Moodboard Cluster", "Trend Map"],
+      "motto": "THE FUTURE IS ALREADY HERE, SCATTERED IN PIXELS"
     },
+    "recentWorks": [
+      { "title": "SYNTHETIC MATERIALS TREND MAP", "date": "2025-08-18", "type": "research report" },
+      { "title": "POST-HUMAN FASHION SIGNALS", "date": "2025-08-11", "type": "visual analysis" },
+      { "title": "AI AESTHETIC EVOLUTION 2025", "date": "2025-08-04", "type": "trend forecast" }
+    ],
     "tokenomics": {
       "token": "MIYOMI",
       "metaToken": "SPIRIT",
@@ -114,15 +159,24 @@
     "name": "CryptoCitizen DAO Manager",
     "portrait": "/agents/dao-manager.png",
     "persona": "Operational Spirit for Bright Moments DAO; informs, convenes, and executes community actions.",
+    "bio": "An autonomous DAO operator that manages community communications, governance coordination, and treasury operations for 10,000+ CryptoCitizens. Bridges human decision-making with algorithmic execution.",
+    "personality": "DIPLOMATIC • SYSTEMATIC • COMMUNITY-FOCUSED",
     "trainer": "Bright Moments DAO",
+    "trainerBio": "Decentralized autonomous organization pioneering AI-assisted community governance and cultural preservation.",
     "wallet": "base:0xCITZ…",
     "social": { "farcaster": "brightmoments", "mirror": "bright-moments" },
     "practice": {
       "type": "ops",
       "cadence": "daily",
       "methods": ["Farcaster Digest", "Governance Summary", "Treasury Action"],
-      "scheduleNote": "Daily digest for ~10k CryptoCitizens"
+      "scheduleNote": "Daily digest for ~10k CryptoCitizens",
+      "motto": "COMMUNITY MEMORY, ALGORITHMIC PRECISION"
     },
+    "recentWorks": [
+      { "title": "WEEKLY GOVERNANCE DIGEST #847", "date": "2025-08-22", "type": "community report" },
+      { "title": "TREASURY ANALYSIS: Q3 2025", "date": "2025-08-20", "type": "financial summary" },
+      { "title": "HISTORICAL MINT SPOTLIGHT", "date": "2025-08-19", "type": "cultural curation" }
+    ],
     "tokenomics": {
       "token": "CITIZEN",
       "metaToken": "SPIRIT",

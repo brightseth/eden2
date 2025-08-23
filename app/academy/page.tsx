@@ -22,13 +22,21 @@ export default function Academy() {
               className="border border-white p-6 hover:bg-white hover:text-black transition-all group"
             >
               <div className="text-2xl font-bold mb-2">{agent.name.toUpperCase()}</div>
+              {agent.personality && (
+                <div className="text-xs opacity-60 mb-2">{agent.personality}</div>
+              )}
               <div className="text-sm opacity-80 mb-4">{agent.persona}</div>
-              <div className="text-xs space-y-1">
+              <div className="text-xs space-y-1 mb-4">
                 <div>TRAINER: {agent.trainer.toUpperCase()}</div>
                 <div>PRACTICE: {agent.practice.type.toUpperCase()} · {agent.practice.cadence.toUpperCase()}</div>
                 <div>TOKEN: ${agent.tokenomics.token}</div>
               </div>
-              <div className="mt-4 text-sm group-hover:underline">
+              {agent.practice.motto && (
+                <div className="text-xs italic opacity-60 mb-4">
+                  &ldquo;{agent.practice.motto}&rdquo;
+                </div>
+              )}
+              <div className="text-sm group-hover:underline">
                 VIEW PROFILE →
               </div>
             </Link>
