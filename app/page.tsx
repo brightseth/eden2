@@ -50,6 +50,16 @@ export default function Home() {
               <h2 className="text-2xl mb-2">ANALYTICS</h2>
               <p className="text-sm opacity-80">REVENUE FORECASTING</p>
             </Link>
+            
+            <Link href="/portfolio" className="block border border-white p-6 hover:bg-white hover:text-black transition-all">
+              <h2 className="text-2xl mb-2">PORTFOLIO</h2>
+              <p className="text-sm opacity-80">YOUR HOLDINGS</p>
+            </Link>
+            
+            <Link href="/markets" className="block border border-white p-6 hover:bg-white hover:text-black transition-all">
+              <h2 className="text-2xl mb-2">MARKETS</h2>
+              <p className="text-sm opacity-80">TOKEN EXCHANGE</p>
+            </Link>
 
             <div className="border border-white/30 border-dashed p-6">
               <h3 className="text-lg mb-3">ECOSYSTEM METRICS</h3>
