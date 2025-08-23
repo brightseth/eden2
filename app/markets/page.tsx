@@ -3,12 +3,17 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import OrderBook from "@/components/OrderBook";
-import { getAgentPerformanceData } from "@/lib/analytics";
+import { getAgentPerformanceData, type AgentPerformanceData } from "@/lib/analytics";
 import { getAgentLaunchStatus } from "@/lib/tokenomics";
+
+interface MarketDataItem extends AgentPerformanceData {
+  isLaunched: boolean;
+  launchStatus: string;
+}
 
 export default function MarketsPage() {
   const [selectedToken, setSelectedToken] = useState<string>("$ABRAHAM");
-  const [marketData, setMarketData] = useState<any[]>([]);
+  const [marketData, setMarketData] = useState<MarketDataItem[]>([]);
 
   useEffect(() => {
     const performance = getAgentPerformanceData();

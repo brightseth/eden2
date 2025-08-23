@@ -9,14 +9,12 @@ type OrderBookProps = {
 
 export default function OrderBook({ tokenSymbol }: OrderBookProps) {
   const [orderBook, setOrderBook] = useState<ReturnType<typeof getTokenOrderBook> | null>(null);
-  const [refreshCounter, setRefreshCounter] = useState(0);
 
   useEffect(() => {
     setOrderBook(getTokenOrderBook(tokenSymbol));
     
     // Simulate live updates
     const interval = setInterval(() => {
-      setRefreshCounter(prev => prev + 1);
       setOrderBook(getTokenOrderBook(tokenSymbol));
     }, 5000);
 

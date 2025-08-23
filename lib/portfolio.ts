@@ -208,7 +208,13 @@ export function getUpcomingAllocations(spiritBalance: number) {
 
 // Calculate revenue projections based on holdings
 export function calculateRevenueProjections(portfolio: CollectorPortfolio) {
-  const projections = [];
+  const projections: Array<{
+    period: string;
+    projectedRevenue: number;
+    fromSpiritHoldings: number;
+    fromDirectHoldings: number;
+    confidence: number;
+  }> = [];
   const periods = ["Next 7 Days", "Next 30 Days", "Next 90 Days", "Next Year"];
   const multipliers = [7, 30, 90, 365];
   
@@ -229,7 +235,7 @@ export function calculateRevenueProjections(portfolio: CollectorPortfolio) {
 }
 
 // Get order book for a specific token
-export function getTokenOrderBook(tokenSymbol: string) {
+export function getTokenOrderBook(_tokenSymbol: string) {
   const generateOrders = (count: number, basePrice: number, isBid: boolean) => {
     const orders = [];
     let cumulativeVolume = 0;
