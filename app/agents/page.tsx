@@ -13,8 +13,8 @@ export default function Academy() {
           ← BACK
         </Link>
         
-        <h1 className="text-4xl md:text-5xl lg:text-7xl mb-2">EDEN ACADEMY</h1>
-        <p className="text-base md:text-lg opacity-60 mb-12 md:mb-16">AGENTS & THEIR PRACTICES</p>
+        <h1 className="text-4xl md:text-5xl lg:text-7xl mb-2">AGENTS</h1>
+        <p className="text-base md:text-lg opacity-60 mb-12 md:mb-16">AI CREATORS & THEIR TRAINERS</p>
         
         {/* Creation Showcase */}
         <div className="mb-16 md:mb-20">
@@ -30,7 +30,7 @@ export default function Academy() {
           {agents.map(agent => (
             <Link 
               key={agent.id} 
-              href={`/academy/${agent.id}`}
+              href={`/agents/${agent.id}`}
               className="border border-white p-6 hover:bg-white hover:text-black transition-all group"
             >
               <div className="text-2xl font-bold mb-2">{agent.name.toUpperCase()}</div>

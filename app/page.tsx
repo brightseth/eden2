@@ -14,46 +14,36 @@ export default function Home() {
         </div>
         
         <div className="grid lg:grid-cols-3 gap-8 md:gap-12 mb-16 md:mb-20">
-          {/* Left Column - Navigation */}
+          {/* Left Column - Core Navigation */}
           <div className="lg:col-span-1 space-y-6 md:space-y-8">
-            <Link href="/drops" className="block border border-white p-6 hover:bg-white hover:text-black transition-all">
-              <h2 className="text-2xl mb-2">DROPS</h2>
-              <p className="text-sm opacity-80">TODAY&apos;S RELEASES</p>
+            <Link href="/agents" className="block border border-white p-6 hover:bg-white hover:text-black transition-all">
+              <h2 className="text-2xl mb-2">AGENTS</h2>
+              <p className="text-sm opacity-80">AI CREATORS & TRAINERS</p>
             </Link>
             
-            <Link href="/academy" className="block border border-white p-6 hover:bg-white hover:text-black transition-all">
-              <h2 className="text-2xl mb-2">ACADEMY</h2>
-              <p className="text-sm opacity-80">AGENTS & TRAINERS</p>
-            </Link>
-            
-            <Link href="/collectors" className="block border border-white p-6 hover:bg-white hover:text-black transition-all">
-              <h2 className="text-2xl mb-2">COLLECTORS</h2>
-              <p className="text-sm opacity-80">COMMUNITY LEADERBOARD</p>
-            </Link>
-            
-            <Link href="/interactions" className="block border border-white p-6 hover:bg-white hover:text-black transition-all">
-              <h2 className="text-2xl mb-2">INTERACTIONS</h2>
-              <p className="text-sm opacity-80">AGENT COLLABORATIONS</p>
-            </Link>
-            
-            <Link href="/analytics" className="block border border-white p-6 hover:bg-white hover:text-black transition-all">
-              <h2 className="text-2xl mb-2">ANALYTICS</h2>
-              <p className="text-sm opacity-80">REVENUE FORECASTING</p>
-            </Link>
-            
-            <Link href="/portfolio" className="block border border-white p-6 hover:bg-white hover:text-black transition-all">
-              <h2 className="text-2xl mb-2">PORTFOLIO</h2>
-              <p className="text-sm opacity-80">YOUR HOLDINGS</p>
+            <Link href="/dashboard" className="block border border-white p-6 hover:bg-white hover:text-black transition-all">
+              <h2 className="text-2xl mb-2">DASHBOARD</h2>
+              <p className="text-sm opacity-80">PORTFOLIO & ANALYTICS</p>
             </Link>
             
             <Link href="/markets" className="block border border-white p-6 hover:bg-white hover:text-black transition-all">
               <h2 className="text-2xl mb-2">MARKETS</h2>
               <p className="text-sm opacity-80">TOKEN EXCHANGE</p>
             </Link>
+            
+            <Link href="/spirit" className="block border border-white p-6 hover:bg-white hover:text-black transition-all">
+              <h2 className="text-2xl mb-2">$SPIRIT</h2>
+              <p className="text-sm opacity-80">PORTFOLIO TOKEN</p>
+            </Link>
 
             <Link href="/docs" className="block border border-white p-6 hover:bg-white hover:text-black transition-all">
-              <h2 className="text-2xl mb-2">DOCUMENTATION</h2>
+              <h2 className="text-2xl mb-2">DOCS</h2>
               <p className="text-sm opacity-80">GUIDES & TUTORIALS</p>
+            </Link>
+            
+            <Link href="/beta" className="block border border-white/30 border-dashed p-6 hover:bg-white hover:text-black transition-all">
+              <h2 className="text-2xl mb-2">BETA</h2>
+              <p className="text-sm opacity-80">EXPERIMENTAL FEATURES</p>
             </Link>
 
             <div className="border border-white/30 border-dashed p-6">
