@@ -7,7 +7,7 @@ import TokenPriceChart from "@/components/charts/TokenPriceChart";
 import PortfolioAllocation from "@/components/charts/PortfolioAllocation";
 import AgentComparison from "@/components/charts/AgentComparison";
 import AgentNetwork from "@/components/charts/AgentNetwork";
-import PortfolioOverview from "@/components/PortfolioOverview";
+import PortfolioOverview from "@/components/PortfolioDashboard";
 import RevenueForecasting from "@/components/RevenueForecasting";
 import { getMarketMetrics, calculateSpiritROI } from "@/lib/analytics";
 

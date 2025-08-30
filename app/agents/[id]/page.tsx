@@ -1,9 +1,9 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getAgent } from "@/lib/db";
+import { getAgentSync } from "@/lib/db";
 
 export default function AgentPage({ params }: { params: { id: string }}) {
-  const agent = getAgent(params.id);
+  const agent = getAgentSync(params.id);
   if (!agent) return notFound();
   
   return (

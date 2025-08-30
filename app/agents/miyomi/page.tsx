@@ -1,10 +1,16 @@
 import Link from "next/link";
-import { getAgent } from "@/lib/db";
+import { getAgentSync } from "@/lib/db";
 import AgentCreations from "@/components/AgentCreations";
 
 export default function MiyomiPage() {
-  const agent = getAgent("miyomi");
-  if (!agent) return null;
+  const agent = getAgentSync("miyomi");
+  if (!agent) {
+    return (
+      <div className="min-h-screen p-4 md:p-8 flex items-center justify-center">
+        <p className="text-lg opacity-60">Agent not found</p>
+      </div>
+    );
+  }
   
   return (
     <div className="min-h-screen p-4 md:p-8">

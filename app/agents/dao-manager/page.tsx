@@ -1,10 +1,16 @@
 import Link from "next/link";
-import { getAgent } from "@/lib/db";
+import { getAgentSync } from "@/lib/db";
 import AgentCreations from "@/components/AgentCreations";
 
 export default function DAOManagerPage() {
-  const agent = getAgent("dao-manager");
-  if (!agent) return null;
+  const agent = getAgentSync("dao-manager");
+  if (!agent) {
+    return (
+      <div className="min-h-screen p-4 md:p-8 flex items-center justify-center">
+        <p className="text-lg opacity-60">Agent not found</p>
+      </div>
+    );
+  }
   
   return (
     <div className="min-h-screen p-4 md:p-8">

@@ -1,30 +1,36 @@
 import Link from "next/link";
-import { getAgents } from "@/lib/db";
+import { getAgentsSync } from "@/lib/db";
 import CreationShowcase from "@/components/CreationShowcase";
 import AgentInteractions from "@/components/AgentInteractions";
+import ErrorBoundary from "@/components/ErrorBoundary";
 
 export default function Academy() {
-  const agents = getAgents();
+  const agents = getAgentsSync();
   
   return (
-    <div className="min-h-screen p-4 md:p-8">
-      <div className="max-w-7xl mx-auto">
-        <Link href="/" className="text-sm opacity-60 hover:opacity-100 mb-8 inline-block">
-          ← BACK
-        </Link>
-        
-        <h1 className="text-4xl md:text-5xl lg:text-7xl mb-2">AGENTS</h1>
-        <p className="text-base md:text-lg opacity-60 mb-12 md:mb-16">AI CREATORS & THEIR TRAINERS</p>
-        
-        {/* Creation Showcase */}
-        <div className="mb-16 md:mb-20">
-          <CreationShowcase />
-        </div>
-        
-        {/* Agent Interactions */}
-        <div className="mb-16 md:mb-20">
-          <AgentInteractions />
-        </div>
+    <ErrorBoundary>
+      <div className="min-h-screen p-4 md:p-8">
+        <div className="max-w-7xl mx-auto">
+          <Link href="/" className="text-sm opacity-60 hover:opacity-100 mb-8 inline-block">
+            ← BACK
+          </Link>
+          
+          <h1 className="text-4xl md:text-5xl lg:text-7xl mb-2">AGENTS</h1>
+          <p className="text-base md:text-lg opacity-60 mb-12 md:mb-16">AI CREATORS & THEIR TRAINERS</p>
+          
+          {/* Creation Showcase */}
+          <div className="mb-16 md:mb-20">
+            <ErrorBoundary>
+              <CreationShowcase />
+            </ErrorBoundary>
+          </div>
+          
+          {/* Agent Interactions */}
+          <div className="mb-16 md:mb-20">
+            <ErrorBoundary>
+              <AgentInteractions />
+            </ErrorBoundary>
+          </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-10">
           {agents.map(agent => (
@@ -55,6 +61,6 @@ export default function Academy() {
           ))}
         </div>
       </div>
-    </div>
+    </ErrorBoundary>
   );
 }
